@@ -1,0 +1,123 @@
+/* CSS Document */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+.h4{
+    font-family:楷体;
+    color: aliceblue;
+}
+/* 头部标题 */
+.header {
+    padding: 5px;
+    text-align: center;
+    background: white;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* 导航条 */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* 导航条链接 */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* 链接颜色修改 */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* 图像部分 */
+.fakeimg {
+    background-color: #aaa;
+    padding:5px;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+
+    height: 250px;
+}
+.fakeimg1 {
+    background-color: #aaa;
+    padding:5px;
+    width: 100%;
+    height: auto;
+}
+
+/* 文章卡片效果 */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin: auto;
+}
+
+/* 列后面清除浮动 */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* 底部 */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
